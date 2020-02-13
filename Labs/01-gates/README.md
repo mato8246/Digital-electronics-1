@@ -28,6 +28,10 @@
 
 ![equation](https://latex.codecogs.com/gif.latex?f%20%3D%20a%5Ccdot%20%5Coverline%7Bb%7D%20&plus;%20%5Coverline%7Bb%7D%5Ccdot%20%5Coverline%7Bc%7D)
 
+<<<<<<< HEAD
+=======
+  
+>>>>>>> b4fc53be5ddb32e9c68ff887530f13812460bd1f
 
 ![Schema1](2.png)
 ![Schema1](3.png)
