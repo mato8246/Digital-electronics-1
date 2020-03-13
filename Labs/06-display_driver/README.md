@@ -1,3 +1,7 @@
+&nbsp;
+    ![segment_timing](../../Images/wavedrom_7-segment.png)
+&nbsp;
+
 ```javascript
 {signal: [
   ['Digit position',
