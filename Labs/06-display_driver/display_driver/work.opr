@@ -1,0 +1,6 @@
+"hex_to_7seg.vhd" VHDL work 1 0 0 -02 -08
+"clock_enable.vhd" VHDL work 1 0 0 -02 -08
+"driver_7seg.vhd" VHDL work 1 0 0 -02 -08
+"design.vhd" VHDL work 1 0 0 -02 -08
+"testbench.vhd" VHDL work 1 0 0 -02 -08
+. . 0 0 0
