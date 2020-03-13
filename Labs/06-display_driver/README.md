@@ -1,5 +1,5 @@
 &nbsp;
-    ![segment_timing](../../Images/wavedrom_7-segment.png)
+    ![segment_timing](../../Images/cviko6.png)
 &nbsp;
 
 ```javascript
