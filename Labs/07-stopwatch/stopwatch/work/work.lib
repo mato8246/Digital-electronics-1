@@ -1,0 +1,43 @@
+timestamp=1584639017397
+
+[~A]
+ModifyID=1
+Version=74
+
+[decimalcounter]
+A/behavioral=A/Behavioral 21|./../stopwatch_counter.vhdl|36|1*0
+BinL64/behavioral=3*0
+I=0*1857
+I/behavioral=I/Behavioral 0*2757
+M=11|1|vdb|1584639017335|./../stopwatch_counter.vhdl|0*1345*0xb6086329e979ef8762e700cbb7f38c7f598a71e4|0*1762*0xd986fd7175c8cf28cd774bcadde79966
+M/behavioral=M/Behavioral 21|1|vdb|1584639017337|./../stopwatch_counter.vhdl|0*2179*0x8f6f15d3684eb0d8dc73c71fd6cab06b172f7b32|0*2648*0xb966535deb9617f745ced53ae4cc1a7f
+R=./../stopwatch_counter.vhdl|20
+Version=2017.02.99 (Linux64)|00000006789c53d0353230b0000003970118|05886669562d2119925354213e2b53d72e144e295ea15b7ab8ae2fd7df47a58f469b1e1edecfd58d23c6433d94452c7f
+Version/behavioral=2017.02.99 (Linux64)|00000006789c53d0353230b0000003970118|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff49d5561da3e9f99693fa498564584d1fd
+
+[stopwatch]
+A/behavioral=A/Behavioral 21|./../stopwatch.vhd|19|1*4160
+BinL64/behavioral=3*679
+I=0*841
+I/behavioral=I/Behavioral 0*6340
+M=11|1|vdb|1584639017323|./../stopwatch.vhd|0*266*0x4590e1dcbfcff8120bd86f1fb0939ba8ecc8de1c|0*760*0xd986fd7175c8cf28cd774bcadde79966
+M/behavioral=M/Behavioral 21|1|vdb|1584639017390|./../stopwatch.vhd|0*5177*0xb50040e57f631e01b42768a5ca935f714048cc16|0*6245*0xb966535deb9617f745ced53ae4cc1a7f
+R=./../stopwatch.vhd|5
+Version=2017.02.99 (Linux64)|00000006789c53d0353230b0000003970118|80786ac4920b7015d0ea101411496889a26c989bfd142d4b45cb211f4178385a0e136e6f18d30c383f681aaa6f82ba2a
+Version/behavioral=2017.02.99 (Linux64)|00000006789c53d0353230b0000003970118|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4c6549fdbe2e76f7bd9ef5e4d5ffa78c2
+
+[testbench]
+I=0*4936
+M=11|1|vdb|1584639017372|./../testbench.vhd|0*4666*0x7f8881a2b19514bd4c838aa38c1e04d7f61432db|0*4855*0xd986fd7175c8cf28cd774bcadde79966
+R=./../testbench.vhd|6
+Version=2017.02.99 (Linux64)|00000006789c53d0353230b0000003970118|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d79132fdc145c92abfa954ff4720b443f795b
+
+[~MFT]
+0=26|0work.mgf|6340|1452
+1=4|1work.mgf|4160|2658
+3=4|3work.mgf|679|0
+
+[~U]
+decimalcounter=decimalCounter 11|0*1082|
+stopwatch=11|0*0|
+testbench=11|0*4542|
