@@ -16,7 +16,7 @@
       </p>
     <h4>Naměřená veličina</h4>
       <p>
-        Jak už bylo řečeno je potřeba vzdálenost vypočítat. Hodnotu vzdálenosti získáme pomocí signálu Echo. My budeme počítat s tím, že vyslání a odraz signálu bude probíhat za těchto podmínek (Teplota: 20 °C a Rychlost vzduchu: 343 m/s). Pokud nastanou jiné podmínky musíme konstantu přepočítat. Z toho plyne, že vzoreček bude vypadat následovně. 
+        Jak už bylo řečeno je potřeba vzdálenost vypočítat. Hodnotu vzdálenosti získáme pomocí signálu Echo. My budeme počítat s tím, že vyslání a odraz signálu bude probíhat za těchto podmínek (Teplota: 20 °C a Rychlost vzduchu: 343 m/s). Pokud nastanou jiné podmínky musíme konstantu s číslem 58,31 přepočítat. Z toho plyne, že vzoreček bude vypadat následovně. 
       </p>
       <p>
         vzdálenost[cm] = doba_Echo[us] / 58,31
