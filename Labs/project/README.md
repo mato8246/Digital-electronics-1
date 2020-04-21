@@ -1,11 +1,6 @@
-<style>
-.red {
-    color: red;
-  }  
-</style>  
-<h1><b>Projekt: Ultrazvukový měřič vzdálenosti HC-SR04</b></h1>
+  <h1><b>Projekt: Ultrazvukový měřič vzdálenosti HC-SR04</b></h1>
 <hr>
-  <p class="red">
+  <p>
     Projekt je stanoven jako systém, který bude měřit vzdálenost od předmětů. V projektu se budou využívat dvě součástky a to je deska CoolRunner-II CPLD a ultrazvukový měřič HC-SR04. Snažíme se docílit toho, aby jsme propojili vlastnosti desky a měřiče, a výslednou vzdálenost od předmětu byla zapisována na výstup 7-segmentového displeje.
   </p>
 <h2><i>Hardware</i></h2>
@@ -27,7 +22,9 @@
         vzdálenost[cm] = doba_Echo[us] / 58,31
       </p>
   <h3>CoolRunner-II CPLD</h3>
-    <p></p>
+    <p>
+      Jedna se o desku, která v našem projektu slouží jako propojení funkcí měřiče a 7-segmentového displeje. Má vysoce výkonné CPLD s nízkým výkonem.         
+    </p>
 <hr>
 <h2><i>Code</i></h2>
   <p></p>
