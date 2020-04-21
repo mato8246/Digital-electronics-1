@@ -12,7 +12,7 @@
     <h4>Komunikace</h4>
       <img src="img/HC-SR04_komunikace.png" alt="Komunikace" width="" height="" />
       <p>
-        Komunikace měřiče s deskou probíhá pomocí dvou signálů (Trig a Echo). Na začátku se aktivuje signál "TRIG" na měřiči vzdálenosti, a to na dobu minimálně 10 μs. Po této aktivaci vyšle modul ultrazvukový signál a čeká na jeho odražení od překážky a zpětné zachycení měřičem. Mezi tím se aktivuje signál "ECHO", jehož délka je pak úměrná vzdálenosti překážky. Signál "ECHO" se deaktivuje po zachycení odraženého signálu měřičem vzdálenosti. Velikost času kdy Echo je aktivní je naše hodnota pro výpočet vzdálenosti.
+        Komunikace měřiče s deskou probíhá pomocí dvou signálů (Trig a Echo). Na začátku se aktivuje signál "TRIG" na měřiči vzdálenosti, a to na dobu minimálně 10 μs. Po této aktivaci vyšle modul ultrazvukový signál a čeká na jeho odražení od překážky a zpětné zachycení měřičem. Mezi tím se aktivuje signál "ECHO", jehož délka je pak úměrná vzdálenosti překážky. Signál "ECHO" se deaktivuje po zachycení odraženého signálu měřičem vzdálenosti. Doba, kdy Echo je aktivní je naše hodnota pro výpočet vzdálenosti.
       </p>
     <h4>Naměřená veličina</h4>
       <p>
@@ -23,7 +23,7 @@
       </p>
   <h3>CoolRunner-II CPLD</h3>
     <p>
-      Jedna se o desku, která v našem projektu slouží jako propojení funkcí měřiče a 7-segmentového displeje. Má vysoce výkonné CPLD s nízkým výkonem.         
+      Jedna se o desku, která v našem projektu slouží jako propojení funkcí měřiče a 7-segmentového displeje.         
     </p>
 <hr>
 <h2><i>Code</i></h2>
