@@ -5,7 +5,7 @@
   </p>
 <h2>Hardware</h2>
   <h3>HC-SR04</h3>
-    <img src="img/HC-SR04-PINOUT.jpg" alt="pinout" wide="200px" hight="50px"/>
+    <img src="img/HC-SR04-PINOUT.jpg" alt="pinout" wide="50px" hight="50px"/>
     <p>
       Je to součástka díky, které lze měřit vzdálenosti od předmětů. Rozsah vzdálenosti, které je tento model schopen měřit je 2 cm až 450 cm.
     </p>
