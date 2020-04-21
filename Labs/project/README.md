@@ -1,9 +1,9 @@
 <h1><b>Projekt: Ultrazvukový měřič vzdálenosti HC-SR04</b></h1>
-<hr>
+
   <p>
     Projekt je stanoven jako systém, který bude měřit vzdálenost od předmětů. V projektu se budou využívát dvě součástky a to je deska CoolRunner-II a ultrazvukový měřič HC-SR04. Snažíme se docílit toho, aby jsme propojili vlastnosti desky a měřiče, a výslednou vzdálenost od předmětu byla zapisována na výstup 7-segmentového displeje.
   </p>
-<h2><u>Hardware</u></h2>
+<h2><i>Hardware</i></h2>
   <h3>HC-SR04</h3>
     <img src="img/HC-SR04-PINOUT.jpg" alt="pinout" width="300px" height="200px" />
     <p>
@@ -12,7 +12,7 @@
   <h3>CoolRunner-II CPLD</h3>
     <p></p>
 <hr>
-<h2>Code</h2>
+<h2><i>Code</i></h2>
   <p></p>
 <hr>
   <h3>Zdroje</h3>
