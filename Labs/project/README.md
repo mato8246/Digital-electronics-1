@@ -6,7 +6,7 @@
 <h2>Hardware</h2>
   <h3>HC-SR04</h3>
     <p>
-      
+      Je to součástka díky, které lze měřit vzdálenosti od předmětů. Rozsah vzdálenosti, které je tento model schopen měřit je 2 cm až 450 cm.
     </p>
   <h3>CoolRunner-II CPLD</h3>
     <p></p>
