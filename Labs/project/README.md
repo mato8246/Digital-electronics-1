@@ -16,11 +16,18 @@
       </p>
     <h4>Naměřená veličina</h4>
       <p>
-        Jak už bylo řečeno je potřeba vzdálenost vypočítat. Hodnotu vzdálenosti získáme pomocí signálu Echo. My budeme počítat s tím, že vyslání a odraz signálu bude probíhat za těchto podmínek (Teplota: 20 °C a Rychlost vzduchu: 343 m/s). Pokud nastanou jiné podmínky musíme konstantu s číslem 58 přepočítat. Z toho plyne, že vzoreček bude vypadat následovně. 
+        Jak už bylo řečeno je potřeba vzdálenost vypočítat. Hodnotu vzdálenosti získáme pomocí signálu Echo. My budeme počítat s tím, že vyslání a odraz signálu bude probíhat za těchto podmínek (Teplota: 20 °C a Rychlost vzduchu: 343 m/s). Pokud nastanou jiné podmínky musíme konstantu s číslem 58,31 přepočítat. Z toho plyne, že vzoreček bude vypadat následovně. 
       </p>
       <p>
-        vzdálenost[cm] = doba_Echo[us] / 58
+        vzdálenost[cm] = doba_Echo[us] / 58,31
+        vzdálenost[cm] = doba_Echo[us] * 0,01715
       </p>
+ <!--      <p>
+        Jelikož je dělení ve VHDL jazyku složitější než násobení, tak lze použít vzoreček z fyziky s = v * t. Kde s je naše vzdálenost v cm, pak v je rychlost světla při 20 °C a to je 343 m/s. Rychlost převedeme na cm/us, a to je 0,0343 cm/us. Náš výsledek z Echa je v us, proto musíme převést i rychlost. Konečnou vzdálenost musíme vydělit dvěma, protože výsledek je vzdálenost signálu oběma směry.
+      </p>
+      <p>
+        vzdálenost[cm] = doba_Echo[us] * 0,0343 * 0,5
+      </p> -->
   <h3>CoolRunner-II CPLD</h3>
     <p>
       Jedna se o desku, která v našem projektu slouží jako propojení funkcí měřiče a 7-segmentového displeje.         
