@@ -47,11 +47,11 @@ begin
              "0001111" when (hex_i = "0111") else   -- 7
              "0000000" when (hex_i = "1000") else   -- 8
              "0000100" when (hex_i = "1001") else   -- 9
-             "0001000" when (hex_i = "1010") else   -- A
-             "1100000" when (hex_i = "1011") else   -- B
-             "0110000" when (hex_i = "1100") else   -- C
-             "1000010" when (hex_i = "1101") else   -- D
-             "0110000" when (hex_i = "1110") else   -- E
-             "0111000" when (hex_i = "1111");       -- F
+   --          "0001000" when (hex_i = "1010") else   -- A
+   --          "1100000" when (hex_i = "1011") else   -- B
+   --          "0110000" when (hex_i = "1100") else   -- C
+   --          "1000010" when (hex_i = "1101") else   -- D
+   --          "0110000" when (hex_i = "1110") else   -- E
+   --          "0111000" when (hex_i = "1111");       -- F
 
 end architecture Behavioral;
