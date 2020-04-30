@@ -1,0 +1,6 @@
+vhdl isim_temp "binary_cnt.vhd"
+vhdl isim_temp "unit_converter.vhd"
+vhdl isim_temp "trigger_gen.vhd"
+vhdl isim_temp "distance.vhd"
+vhdl isim_temp "hcsr04.vhd"
+vhdl isim_temp "hcsr04_tb.vhd"

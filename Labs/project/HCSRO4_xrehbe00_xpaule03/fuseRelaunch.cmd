@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/Desktop/HCSRO4_xrehbe00_xpaule03/top_tb_isim_beh.exe" -prj "/home/ise/Desktop/HCSRO4_xrehbe00_xpaule03/top_tb_beh.prj" "work.top_tb" 
