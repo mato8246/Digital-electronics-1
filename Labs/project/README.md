@@ -37,6 +37,9 @@
   <img src="img/top_schema.PNG" alt="schema" />
   <img src="img/schema.PNG" alt="schema" />
 <hr>  
+<h2><i>Testbench</i></h2>
+  <p>Testbench ani u jedné z komponent nám vyhazoval nesmyslné výsledky, proto nemůžeme doložit obrázky testbenchu.</p>
+<hr>
 <h2><i>Code</i></h2>
   <p></p>
 <hr>
