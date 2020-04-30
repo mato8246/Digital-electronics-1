@@ -33,12 +33,15 @@
       Jedna se o desku, která v našem projektu slouží jako propojení funkcí měřiče a 7-segmentového displeje.         
     </p>
 <hr>
-<h2><i>Schema</i></h2>
+<h2><i>Schémy</i></h2>
   <img src="img/top_schema.PNG" alt="schema" />
   <img src="img/schema.PNG" alt="schema" />
 <hr>  
 <h2><i>Testbench</i></h2>
   <p>Testbench nám u jednolivých komponentů vyhazoval nesmyslné výsledky, proto nemůžeme doložit obrázky testbenchu.</p>
+<hr>
+<h2><i>Zhodnocení</i></h2>
+  <p></p>
 <hr>
   <h3>Zdroje</h3>
 <ul>
