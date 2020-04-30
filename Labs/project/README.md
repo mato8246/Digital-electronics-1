@@ -40,9 +40,9 @@
 <h2><i>Testbench</i></h2>
   <p>Testbench nám u jednolivých komponentů vyhazoval nesmyslné výsledky, proto nemůžeme doložit obrázky testbenchu.</p>
 <hr>
-<h2><i>Zhodnocení</i></h2>
+<!--<h2><i>Zhodnocení</i></h2>
   <p></p>
-<hr>
+<hr>-->
   <h3>Zdroje</h3>
 <ul>
   <li>https://navody.arduino-shop.cz/navody-k-produktum/meric-vzdalenosti-ultrazvukovy.html</li>
