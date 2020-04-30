@@ -1,0 +1,46 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+clk_i S:PIN38
+topsegA_o S:PIN56
+topsegB_o S:PIN53
+topsegC_o S:PIN60
+topsegD_o S:PIN58
+topsegE_o S:PIN57
+topsegF_o S:PIN54
+topsegG_o S:PIN61
+topselDisp0_o S:PIN130
+topselDisp1_o S:PIN129
+topselDisp2_o S:PIN128
+topselDisp3_o S:PIN126
+trig_pin_o S:PIN6
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 uut2/uut1/count<6> uut2/uut1/count<7> uut2/uut1/count<0> uut2/uut1/count<1>
+		 uut2/uut1/count<8> uut2/uut1/count<2> uut2/uut1/count<9> uut2/uut1/count<10>
+		 uut2/uut1/count<11> uut2/uut1/count<12> uut2/uut1/count<13> uut2/uut1/count<3>
+		 uut2/uut1/count<4> uut2/uut1/count<5> uut2/uut1/count<14> uut2/s_clock_word<15>
+		
+PARTITION FB2_11 uut2/display_selection<1> trig_pin_o
+PARTITION FB2_16 uut2/display_selection<0>
+
+
+
+
+
+
+
+
+PARTITION FB11_13 topselDisp3_o topselDisp2_o topselDisp1_o topselDisp0_o
+		
+
+
+PARTITION FB14_16 topsegG_o
+
+PARTITION FB16_5 topsegC_o
+PARTITION FB16_11 topsegD_o topsegE_o topsegA_o
+PARTITION FB16_15 topsegF_o topsegB_o
+

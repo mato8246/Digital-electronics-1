@@ -1,0 +1,316 @@
+MDF Database:  version 1.0
+MDF_INFO | top | XC2C256-6-TQ144
+MACROCELL | 15 | 12 | topsegA_o_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   topsegA_o = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 15 | 15 | topsegB_o_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   topsegB_o = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 15 | 4 | topsegC_o_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   topsegC_o = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 15 | 10 | topsegD_o_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   topsegD_o = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 15 | 11 | topsegE_o_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   topsegE_o = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 15 | 14 | topsegF_o_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   topsegF_o = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 13 | 15 | topsegG_o_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   !topsegG_o = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 10 | 15 | topselDisp0_o_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 2 | uut2/display_selection<0>  | uut2/display_selection<1>
+INPUTMC | 2 | 1 | 15 | 1 | 10
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   !topselDisp0_o := !uut2/display_selection<0> & 
+	!uut2/display_selection<1>;	// (1 pt, 2 inp)
+    topselDisp0_o.CLK = uut2/s_clock_word<15>;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 1 | 15 | uut2/display_selection<0>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 5 | 1 | 10 | 10 | 15 | 10 | 14 | 10 | 13 | 10 | 12
+INPUTS | 0
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   !uut2/display_selection<0>.T := Gnd;	// (0 pt, 0 inp)
+    uut2/display_selection<0>.CLK = uut2/s_clock_word<15>;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 15 | uut2/s_clock_word<15>_MC
+ATTRIBUTES | 2151711488 | 8
+INPUTS | 15 | uut2/uut1/count<0>  | uut2/uut1/count<10>  | uut2/uut1/count<1>  | uut2/uut1/count<2>  | uut2/uut1/count<3>  | uut2/uut1/count<4>  | uut2/uut1/count<5>  | uut2/uut1/count<6>  | uut2/uut1/count<7>  | uut2/uut1/count<8>  | uut2/uut1/count<9>  | uut2/uut1/count<11>  | uut2/uut1/count<12>  | uut2/uut1/count<13>  | uut2/uut1/count<14>
+INPUTMC | 15 | 0 | 2 | 0 | 7 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14
+EQ | 7 | 
+   uut2/s_clock_word<15>.T := uut2/uut1/count<0> & uut2/uut1/count<10> & 
+	uut2/uut1/count<1> & uut2/uut1/count<2> & uut2/uut1/count<3> & 
+	uut2/uut1/count<4> & uut2/uut1/count<5> & uut2/uut1/count<6> & 
+	uut2/uut1/count<7> & uut2/uut1/count<8> & uut2/uut1/count<9> & 
+	uut2/uut1/count<11> & uut2/uut1/count<12> & uut2/uut1/count<13> & 
+	uut2/uut1/count<14>;	// (1 pt, 15 inp)
+   uut2/s_clock_word<15>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 2 | uut2/uut1/count<0>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 15 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 0
+EQ | 2 | 
+   !uut2/uut1/count<0>.T := Gnd;	// (0 pt, 0 inp)
+   uut2/uut1/count<0>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 7 | uut2/uut1/count<10>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 5 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 10 | uut2/uut1/count<0>  | uut2/uut1/count<1>  | uut2/uut1/count<2>  | uut2/uut1/count<3>  | uut2/uut1/count<4>  | uut2/uut1/count<5>  | uut2/uut1/count<6>  | uut2/uut1/count<7>  | uut2/uut1/count<8>  | uut2/uut1/count<9>
+INPUTMC | 10 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6
+EQ | 5 | 
+   uut2/uut1/count<10>.T := uut2/uut1/count<0> & uut2/uut1/count<1> & 
+	uut2/uut1/count<2> & uut2/uut1/count<3> & uut2/uut1/count<4> & 
+	uut2/uut1/count<5> & uut2/uut1/count<6> & uut2/uut1/count<7> & 
+	uut2/uut1/count<8> & uut2/uut1/count<9>;	// (1 pt, 10 inp)
+   uut2/uut1/count<10>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 3 | uut2/uut1/count<1>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 14 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 1 | uut2/uut1/count<0>
+INPUTMC | 1 | 0 | 2
+EQ | 2 | 
+   uut2/uut1/count<1>.T := uut2/uut1/count<0>;	// (1 pt, 1 inp)
+   uut2/uut1/count<1>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 5 | uut2/uut1/count<2>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 13 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 2 | uut2/uut1/count<0>  | uut2/uut1/count<1>
+INPUTMC | 2 | 0 | 2 | 0 | 3
+EQ | 2 | 
+   uut2/uut1/count<2>.T := uut2/uut1/count<0> & uut2/uut1/count<1>;	// (1 pt, 2 inp)
+   uut2/uut1/count<2>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 11 | uut2/uut1/count<3>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 12 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 3 | uut2/uut1/count<0>  | uut2/uut1/count<1>  | uut2/uut1/count<2>
+INPUTMC | 3 | 0 | 2 | 0 | 3 | 0 | 5
+EQ | 3 | 
+   uut2/uut1/count<3>.T := uut2/uut1/count<0> & uut2/uut1/count<1> & 
+	uut2/uut1/count<2>;	// (1 pt, 3 inp)
+   uut2/uut1/count<3>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 12 | uut2/uut1/count<4>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 11 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 4 | uut2/uut1/count<0>  | uut2/uut1/count<1>  | uut2/uut1/count<2>  | uut2/uut1/count<3>
+INPUTMC | 4 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 11
+EQ | 3 | 
+   uut2/uut1/count<4>.T := uut2/uut1/count<0> & uut2/uut1/count<1> & 
+	uut2/uut1/count<2> & uut2/uut1/count<3>;	// (1 pt, 4 inp)
+   uut2/uut1/count<4>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 13 | uut2/uut1/count<5>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 10 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 5 | uut2/uut1/count<0>  | uut2/uut1/count<1>  | uut2/uut1/count<2>  | uut2/uut1/count<3>  | uut2/uut1/count<4>
+INPUTMC | 5 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12
+EQ | 3 | 
+   uut2/uut1/count<5>.T := uut2/uut1/count<0> & uut2/uut1/count<1> & 
+	uut2/uut1/count<2> & uut2/uut1/count<3> & uut2/uut1/count<4>;	// (1 pt, 5 inp)
+   uut2/uut1/count<5>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 0 | uut2/uut1/count<6>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 9 | 0 | 1 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 6 | uut2/uut1/count<0>  | uut2/uut1/count<1>  | uut2/uut1/count<2>  | uut2/uut1/count<3>  | uut2/uut1/count<4>  | uut2/uut1/count<5>
+INPUTMC | 6 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13
+EQ | 4 | 
+   uut2/uut1/count<6>.T := uut2/uut1/count<0> & uut2/uut1/count<1> & 
+	uut2/uut1/count<2> & uut2/uut1/count<3> & uut2/uut1/count<4> & 
+	uut2/uut1/count<5>;	// (1 pt, 6 inp)
+   uut2/uut1/count<6>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 1 | uut2/uut1/count<7>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 8 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 7 | uut2/uut1/count<0>  | uut2/uut1/count<1>  | uut2/uut1/count<2>  | uut2/uut1/count<3>  | uut2/uut1/count<4>  | uut2/uut1/count<5>  | uut2/uut1/count<6>
+INPUTMC | 7 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0
+EQ | 4 | 
+   uut2/uut1/count<7>.T := uut2/uut1/count<0> & uut2/uut1/count<1> & 
+	uut2/uut1/count<2> & uut2/uut1/count<3> & uut2/uut1/count<4> & 
+	uut2/uut1/count<5> & uut2/uut1/count<6>;	// (1 pt, 7 inp)
+   uut2/uut1/count<7>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 4 | uut2/uut1/count<8>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 7 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 8 | uut2/uut1/count<0>  | uut2/uut1/count<1>  | uut2/uut1/count<2>  | uut2/uut1/count<3>  | uut2/uut1/count<4>  | uut2/uut1/count<5>  | uut2/uut1/count<6>  | uut2/uut1/count<7>
+INPUTMC | 8 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1
+EQ | 4 | 
+   uut2/uut1/count<8>.T := uut2/uut1/count<0> & uut2/uut1/count<1> & 
+	uut2/uut1/count<2> & uut2/uut1/count<3> & uut2/uut1/count<4> & 
+	uut2/uut1/count<5> & uut2/uut1/count<6> & uut2/uut1/count<7>;	// (1 pt, 8 inp)
+   uut2/uut1/count<8>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 6 | uut2/uut1/count<9>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 9 | uut2/uut1/count<0>  | uut2/uut1/count<1>  | uut2/uut1/count<2>  | uut2/uut1/count<3>  | uut2/uut1/count<4>  | uut2/uut1/count<5>  | uut2/uut1/count<6>  | uut2/uut1/count<7>  | uut2/uut1/count<8>
+INPUTMC | 9 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4
+EQ | 5 | 
+   uut2/uut1/count<9>.T := uut2/uut1/count<0> & uut2/uut1/count<1> & 
+	uut2/uut1/count<2> & uut2/uut1/count<3> & uut2/uut1/count<4> & 
+	uut2/uut1/count<5> & uut2/uut1/count<6> & uut2/uut1/count<7> & 
+	uut2/uut1/count<8>;	// (1 pt, 9 inp)
+   uut2/uut1/count<9>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 8 | uut2/uut1/count<11>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 4 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 11 | uut2/uut1/count<0>  | uut2/uut1/count<10>  | uut2/uut1/count<1>  | uut2/uut1/count<2>  | uut2/uut1/count<3>  | uut2/uut1/count<4>  | uut2/uut1/count<5>  | uut2/uut1/count<6>  | uut2/uut1/count<7>  | uut2/uut1/count<8>  | uut2/uut1/count<9>
+INPUTMC | 11 | 0 | 2 | 0 | 7 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6
+EQ | 5 | 
+   uut2/uut1/count<11>.T := uut2/uut1/count<0> & uut2/uut1/count<10> & 
+	uut2/uut1/count<1> & uut2/uut1/count<2> & uut2/uut1/count<3> & 
+	uut2/uut1/count<4> & uut2/uut1/count<5> & uut2/uut1/count<6> & 
+	uut2/uut1/count<7> & uut2/uut1/count<8> & uut2/uut1/count<9>;	// (1 pt, 11 inp)
+   uut2/uut1/count<11>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 9 | uut2/uut1/count<12>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 3 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTS | 12 | uut2/uut1/count<0>  | uut2/uut1/count<10>  | uut2/uut1/count<1>  | uut2/uut1/count<2>  | uut2/uut1/count<3>  | uut2/uut1/count<4>  | uut2/uut1/count<5>  | uut2/uut1/count<6>  | uut2/uut1/count<7>  | uut2/uut1/count<8>  | uut2/uut1/count<9>  | uut2/uut1/count<11>
+INPUTMC | 12 | 0 | 2 | 0 | 7 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6 | 0 | 8
+EQ | 6 | 
+   uut2/uut1/count<12>.T := uut2/uut1/count<0> & uut2/uut1/count<10> & 
+	uut2/uut1/count<1> & uut2/uut1/count<2> & uut2/uut1/count<3> & 
+	uut2/uut1/count<4> & uut2/uut1/count<5> & uut2/uut1/count<6> & 
+	uut2/uut1/count<7> & uut2/uut1/count<8> & uut2/uut1/count<9> & 
+	uut2/uut1/count<11>;	// (1 pt, 12 inp)
+   uut2/uut1/count<12>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 10 | uut2/uut1/count<13>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 2 | 0 | 14 | 0 | 15
+INPUTS | 13 | uut2/uut1/count<0>  | uut2/uut1/count<10>  | uut2/uut1/count<1>  | uut2/uut1/count<2>  | uut2/uut1/count<3>  | uut2/uut1/count<4>  | uut2/uut1/count<5>  | uut2/uut1/count<6>  | uut2/uut1/count<7>  | uut2/uut1/count<8>  | uut2/uut1/count<9>  | uut2/uut1/count<11>  | uut2/uut1/count<12>
+INPUTMC | 13 | 0 | 2 | 0 | 7 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6 | 0 | 8 | 0 | 9
+EQ | 6 | 
+   uut2/uut1/count<13>.T := uut2/uut1/count<0> & uut2/uut1/count<10> & 
+	uut2/uut1/count<1> & uut2/uut1/count<2> & uut2/uut1/count<3> & 
+	uut2/uut1/count<4> & uut2/uut1/count<5> & uut2/uut1/count<6> & 
+	uut2/uut1/count<7> & uut2/uut1/count<8> & uut2/uut1/count<9> & 
+	uut2/uut1/count<11> & uut2/uut1/count<12>;	// (1 pt, 13 inp)
+   uut2/uut1/count<13>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 14 | uut2/uut1/count<14>_MC
+ATTRIBUTES | 2151711488 | 8
+OUTPUTMC | 1 | 0 | 15
+INPUTS | 14 | uut2/uut1/count<0>  | uut2/uut1/count<10>  | uut2/uut1/count<1>  | uut2/uut1/count<2>  | uut2/uut1/count<3>  | uut2/uut1/count<4>  | uut2/uut1/count<5>  | uut2/uut1/count<6>  | uut2/uut1/count<7>  | uut2/uut1/count<8>  | uut2/uut1/count<9>  | uut2/uut1/count<11>  | uut2/uut1/count<12>  | uut2/uut1/count<13>
+INPUTMC | 14 | 0 | 2 | 0 | 7 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10
+EQ | 6 | 
+   uut2/uut1/count<14>.T := uut2/uut1/count<0> & uut2/uut1/count<10> & 
+	uut2/uut1/count<1> & uut2/uut1/count<2> & uut2/uut1/count<3> & 
+	uut2/uut1/count<4> & uut2/uut1/count<5> & uut2/uut1/count<6> & 
+	uut2/uut1/count<7> & uut2/uut1/count<8> & uut2/uut1/count<9> & 
+	uut2/uut1/count<11> & uut2/uut1/count<12> & uut2/uut1/count<13>;	// (1 pt, 14 inp)
+   uut2/uut1/count<14>.DEC  =  clk_i;	// GCK, CLKDIV	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 10 | uut2/display_selection<1>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 4 | 10 | 15 | 10 | 14 | 10 | 13 | 10 | 12
+INPUTS | 1 | uut2/display_selection<0>
+INPUTMC | 1 | 1 | 15
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   uut2/display_selection<1>.T := uut2/display_selection<0>;	// (1 pt, 1 inp)
+    uut2/display_selection<1>.CLK = uut2/s_clock_word<15>;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 10 | 14 | topselDisp1_o_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 2 | uut2/display_selection<0>  | uut2/display_selection<1>
+INPUTMC | 2 | 1 | 15 | 1 | 10
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   !topselDisp1_o := uut2/display_selection<0> & 
+	!uut2/display_selection<1>;	// (1 pt, 2 inp)
+    topselDisp1_o.CLK = uut2/s_clock_word<15>;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 10 | 13 | topselDisp2_o_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 2 | uut2/display_selection<0>  | uut2/display_selection<1>
+INPUTMC | 2 | 1 | 15 | 1 | 10
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   !topselDisp2_o := !uut2/display_selection<0> & 
+	uut2/display_selection<1>;	// (1 pt, 2 inp)
+    topselDisp2_o.CLK = uut2/s_clock_word<15>;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 10 | 12 | topselDisp3_o_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 2 | uut2/display_selection<0>  | uut2/display_selection<1>
+INPUTMC | 2 | 1 | 15 | 1 | 10
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   !topselDisp3_o := uut2/display_selection<0> & 
+	uut2/display_selection<1>;	// (1 pt, 2 inp)
+    topselDisp3_o.CLK = uut2/s_clock_word<15>;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 1 | 11 | trig_pin_o_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   trig_pin_o = Gnd;	// (0 pt, 0 inp)
+
+PIN | clk_i | 16384 | 17 | LVCMOS33 | 59 | 16 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 0 | 0 | 1 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 14 | 0 | 15
+PIN | topsegA_o | 536871040 | 0 | LVCMOS33 | 86
+PIN | topsegB_o | 536871040 | 0 | LVCMOS33 | 81
+PIN | topsegC_o | 536871040 | 0 | LVCMOS33 | 90
+PIN | topsegD_o | 536871040 | 0 | LVCMOS33 | 88
+PIN | topsegE_o | 536871040 | 0 | LVCMOS33 | 87
+PIN | topsegF_o | 536871040 | 0 | LVCMOS33 | 82
+PIN | topsegG_o | 536871040 | 0 | LVCMOS33 | 95
+PIN | topselDisp0_o | 536871040 | 0 | LVCMOS33 | 196
+PIN | topselDisp1_o | 536871040 | 0 | LVCMOS33 | 195
+PIN | topselDisp2_o | 536871040 | 0 | LVCMOS33 | 194
+PIN | topselDisp3_o | 536871040 | 0 | LVCMOS33 | 192
+PIN | trig_pin_o | 536871040 | 0 | LVCMOS33 | 7
+PIN | CDRST | 0 | 20480 | LVCMOS33 | 55
