@@ -1,0 +1,147 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+topsegA_o <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+topsegB_o <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+topsegC_o <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+topsegD_o <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+topsegE_o <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+topsegF_o <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+topsegG_o <= NOT ('0');
+</td></tr><tr><td>
+FDCPE_topselDisp0_o: FDCPE port map (topselDisp0_o,topselDisp0_o_D,uut2/s_clock_word(15),'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;topselDisp0_o_D <= NOT ((NOT uut2/display_selection(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT uut2/display_selection(1)));
+</td></tr><tr><td>
+FDCPE_topselDisp1_o: FDCPE port map (topselDisp1_o,topselDisp1_o_D,uut2/s_clock_word(15),'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;topselDisp1_o_D <= NOT ((uut2/display_selection(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT uut2/display_selection(1)));
+</td></tr><tr><td>
+FDCPE_topselDisp2_o: FDCPE port map (topselDisp2_o,topselDisp2_o_D,uut2/s_clock_word(15),'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;topselDisp2_o_D <= NOT ((NOT uut2/display_selection(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/display_selection(1)));
+</td></tr><tr><td>
+FDCPE_topselDisp3_o: FDCPE port map (topselDisp3_o,topselDisp3_o_D,uut2/s_clock_word(15),'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;topselDisp3_o_D <= NOT ((uut2/display_selection(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/display_selection(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+trig_pin_o <= '0';
+</td></tr><tr><td>
+FTCPE_uut2/display_selection0: FTCPE port map (uut2/display_selection(0),'0',uut2/s_clock_word(15),'0','0','1');
+</td></tr><tr><td>
+FTCPE_uut2/display_selection1: FTCPE port map (uut2/display_selection(1),uut2/display_selection(0),uut2/s_clock_word(15),'0','0','1');
+</td></tr><tr><td>
+FTDCPE_uut2/s_clock_word15: FTDCPE port map (uut2/s_clock_word(15),uut2/s_clock_word_T(15),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/s_clock_word_T(15) <= (uut2/uut1/count(0) AND uut2/uut1/count(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(1) AND uut2/uut1/count(2) AND uut2/uut1/count(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(4) AND uut2/uut1/count(5) AND uut2/uut1/count(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(7) AND uut2/uut1/count(8) AND uut2/uut1/count(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(11) AND uut2/uut1/count(12) AND uut2/uut1/count(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(14));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count0: FTDCPE port map (uut2/uut1/count(0),'0',clk_i,'0','0','1');
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count1: FTDCPE port map (uut2/uut1/count(1),uut2/uut1/count(0),clk_i,'0','0','1');
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count2: FTDCPE port map (uut2/uut1/count(2),uut2/uut1/count_T(2),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(2) <= (uut2/uut1/count(0) AND uut2/uut1/count(1));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count3: FTDCPE port map (uut2/uut1/count(3),uut2/uut1/count_T(3),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(3) <= (uut2/uut1/count(0) AND uut2/uut1/count(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(2));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count4: FTDCPE port map (uut2/uut1/count(4),uut2/uut1/count_T(4),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(4) <= (uut2/uut1/count(0) AND uut2/uut1/count(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(2) AND uut2/uut1/count(3));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count5: FTDCPE port map (uut2/uut1/count(5),uut2/uut1/count_T(5),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(5) <= (uut2/uut1/count(0) AND uut2/uut1/count(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(2) AND uut2/uut1/count(3) AND uut2/uut1/count(4));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count6: FTDCPE port map (uut2/uut1/count(6),uut2/uut1/count_T(6),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(6) <= (uut2/uut1/count(0) AND uut2/uut1/count(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(2) AND uut2/uut1/count(3) AND uut2/uut1/count(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(5));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count7: FTDCPE port map (uut2/uut1/count(7),uut2/uut1/count_T(7),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(7) <= (uut2/uut1/count(0) AND uut2/uut1/count(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(2) AND uut2/uut1/count(3) AND uut2/uut1/count(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(5) AND uut2/uut1/count(6));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count8: FTDCPE port map (uut2/uut1/count(8),uut2/uut1/count_T(8),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(8) <= (uut2/uut1/count(0) AND uut2/uut1/count(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(2) AND uut2/uut1/count(3) AND uut2/uut1/count(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(5) AND uut2/uut1/count(6) AND uut2/uut1/count(7));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count9: FTDCPE port map (uut2/uut1/count(9),uut2/uut1/count_T(9),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(9) <= (uut2/uut1/count(0) AND uut2/uut1/count(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(2) AND uut2/uut1/count(3) AND uut2/uut1/count(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(5) AND uut2/uut1/count(6) AND uut2/uut1/count(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(8));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count10: FTDCPE port map (uut2/uut1/count(10),uut2/uut1/count_T(10),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(10) <= (uut2/uut1/count(0) AND uut2/uut1/count(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(2) AND uut2/uut1/count(3) AND uut2/uut1/count(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(5) AND uut2/uut1/count(6) AND uut2/uut1/count(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(8) AND uut2/uut1/count(9));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count11: FTDCPE port map (uut2/uut1/count(11),uut2/uut1/count_T(11),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(11) <= (uut2/uut1/count(0) AND uut2/uut1/count(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(1) AND uut2/uut1/count(2) AND uut2/uut1/count(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(4) AND uut2/uut1/count(5) AND uut2/uut1/count(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(7) AND uut2/uut1/count(8) AND uut2/uut1/count(9));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count12: FTDCPE port map (uut2/uut1/count(12),uut2/uut1/count_T(12),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(12) <= (uut2/uut1/count(0) AND uut2/uut1/count(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(1) AND uut2/uut1/count(2) AND uut2/uut1/count(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(4) AND uut2/uut1/count(5) AND uut2/uut1/count(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(7) AND uut2/uut1/count(8) AND uut2/uut1/count(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(11));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count13: FTDCPE port map (uut2/uut1/count(13),uut2/uut1/count_T(13),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(13) <= (uut2/uut1/count(0) AND uut2/uut1/count(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(1) AND uut2/uut1/count(2) AND uut2/uut1/count(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(4) AND uut2/uut1/count(5) AND uut2/uut1/count(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(7) AND uut2/uut1/count(8) AND uut2/uut1/count(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(11) AND uut2/uut1/count(12));
+</td></tr><tr><td>
+FTDCPE_uut2/uut1/count14: FTDCPE port map (uut2/uut1/count(14),uut2/uut1/count_T(14),clk_i,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uut2/uut1/count_T(14) <= (uut2/uut1/count(0) AND uut2/uut1/count(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(1) AND uut2/uut1/count(2) AND uut2/uut1/count(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(4) AND uut2/uut1/count(5) AND uut2/uut1/count(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(7) AND uut2/uut1/count(8) AND uut2/uut1/count(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	uut2/uut1/count(11) AND uut2/uut1/count(12) AND uut2/uut1/count(13));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>
